@@ -2,8 +2,8 @@
 Changelog for package rqt_runtime_monitor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.5.8 (2020-03-17)
+------------------
 * use conditional dependencies for Python 3 (`#3 <https://github.com/ros-visualization/rqt_runtime_monitor/issues/3>`_)
 * bump CMake minimum version to avoid CMP0048 warning
 
