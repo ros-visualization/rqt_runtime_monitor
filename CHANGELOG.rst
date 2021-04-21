@@ -2,8 +2,8 @@
 Changelog for package rqt_runtime_monitor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.5.9 (2021-04-21)
+------------------
 * fix shebang line for python3 (`#6 <https://github.com/ros-visualization/rqt_runtime_monitor/issues/6>`_)
 * Contributors: Mikael Arguedas
 
