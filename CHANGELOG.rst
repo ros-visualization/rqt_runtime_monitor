@@ -2,6 +2,11 @@
 Changelog for package rqt_runtime_monitor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* fix shebang line for python3 (`#6 <https://github.com/ros-visualization/rqt_runtime_monitor/issues/6>`_)
+* Contributors: Mikael Arguedas
+
 0.5.8 (2020-03-17)
 ------------------
 * use conditional dependencies for Python 3 (`#3 <https://github.com/ros-visualization/rqt_runtime_monitor/issues/3>`_)
