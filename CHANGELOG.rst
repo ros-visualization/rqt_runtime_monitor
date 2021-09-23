@@ -2,6 +2,11 @@
 Changelog for package rqt_runtime_monitor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.0.0 (2021-09-23)
+------------------
+* added LICENSE file
+* Ported to ROS 2 (`#5 <https://github.com/ros-visualization/rqt_runtime_monitor/issues/5>`_)
+
 0.5.8 (2020-03-17)
 ------------------
 * use conditional dependencies for Python 3 (`#3 <https://github.com/ros-visualization/rqt_runtime_monitor/issues/3>`_)
