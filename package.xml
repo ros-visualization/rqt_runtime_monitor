@@ -4,7 +4,7 @@
   schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>rqt_runtime_monitor</name>
-  <version>0.5.9</version>
+  <version>0.5.10</version>
   <description>rqt_runtime_monitor provides a GUI plugin viewing DiagnosticsArray messages.</description>
   <maintainer email="ablasdel@gmail.com">Aaron Blasdel</maintainer>
   <maintainer email="arne.hitzmann@gmail.com">Arne Hitzmann</maintainer>
