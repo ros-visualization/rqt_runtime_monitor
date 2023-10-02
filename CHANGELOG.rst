@@ -2,6 +2,11 @@
 Changelog for package rqt_runtime_monitor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.5.10 (2023-10-02)
+-------------------
+* Import setup from setuptools instead of distutils.core
+* added LICENSE file
+
 0.5.9 (2021-04-21)
 ------------------
 * fix shebang line for python3 (`#6 <https://github.com/ros-visualization/rqt_runtime_monitor/issues/6>`_)
