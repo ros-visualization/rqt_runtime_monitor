@@ -220,7 +220,7 @@ class RuntimeMonitorWidget(QWidget):
                 parent_node = self._error_node
 
             item.tree_node.setText(0, status.name + ": " + status.message)
-            item.tree_node.setData(0, Qt.UserRole, item)
+            item.tree_node.setData(0, Qt.ItemDataRole.UserRole, item)
             parent_node.addChild(item.tree_node)
 
             # expand errors automatically
@@ -228,7 +228,7 @@ class RuntimeMonitorWidget(QWidget):
             if level_int > 1 or level_int == -1:
                 parent_node.setExpanded(True)
 
-            parent_node.sortChildren(0, Qt.AscendingOrder)
+            parent_node.sortChildren(0, Qt.SortOrder.AscendingOrder)
 
             if (was_selected):
                 self.tree_widget.setCurrentItem(item.tree_node)
@@ -254,12 +254,12 @@ class RuntimeMonitorWidget(QWidget):
             parent_node = self._error_node
 
         item = TreeItem(status, QTreeWidgetItem(parent_node, [status.name + ": " + status.message]))
-        item.tree_node.setData(0, Qt.UserRole, item)
+        item.tree_node.setData(0, Qt.ItemDataRole.UserRole, item)
         parent_node.addChild(item.tree_node)
 
         self._name_to_item[status.name] = item
 
-        parent_node.sortChildren(0, Qt.AscendingOrder)
+        parent_node.sortChildren(0, Qt.SortOrder.AscendingOrder)
 
         if (select):
             item.tree_node.setSelected(True)
@@ -273,7 +273,7 @@ class RuntimeMonitorWidget(QWidget):
         return item
 
     def _fillout_info(self, node):
-        item = node.data(0, Qt.UserRole)
+        item = node.data(0, Qt.ItemDataRole.UserRole)
         if not item:
             return
 
@@ -306,10 +306,10 @@ class RuntimeMonitorWidget(QWidget):
 
     def _on_key_press(self, event):
         key = event.key()
-        if key == Qt.Key_Delete:
+        if key == Qt.Key.Key_Delete:
             nodes = self.tree_widget.selectedItems()
             if (nodes != [] and nodes[0] not in (self._ok_node, self._warning_node, self._stale_node, self._error_node)):
-                item = nodes[0].data(0, Qt.UserRole)
+                item = nodes[0].data(0, Qt.ItemDataRole.UserRole)
                 if (item.status.level == 0):
                     self._ok_node.removeChild(item.tree_node)
                 elif (item.status.level == 1):
