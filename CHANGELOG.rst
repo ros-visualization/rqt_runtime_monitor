@@ -2,6 +2,11 @@
 Changelog for package rqt_runtime_monitor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.0.1 (2026-11-19)
+------------------
+* Update LICENSE file to correctly reflect the package name (`#14 <https://github.com/ros-visualization/rqt_runtime_monitor/issues/14>`_)
+* Fixes for setuptools and QT6
+
 1.0.0 (2021-09-23)
 ------------------
 * added LICENSE file
